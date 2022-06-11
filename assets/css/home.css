@@ -1,0 +1,70 @@
+#container1 .btn1 {
+    background-color: white;
+}
+
+#container1 .btn {
+    border-radius: 20px;
+}
+
+#container1 {
+    background-image: url("../img/Rectangle\ 126.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center; 
+    width: 100%;
+}
+
+
+
+#container2 .card {
+    box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.2), 8px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+#container2 .card p{
+    font-size: small;
+}
+
+#container2 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+#section3 h2 {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+line-height: 96px;
+}
+
+#container2 .card .card-body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#section3 .card {
+    box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.08), 8px 8px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 17.9006px;
+}
+
+#section3 .card p{
+    font-size: small;
+}
+
+#section3 .card img {
+    width: 4rem;
+    height: 4rem;
+}
+
+
+@media (max-width:500px) {
+    #container2 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #container2 .card .card-body {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
