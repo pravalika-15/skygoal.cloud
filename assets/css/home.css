@@ -124,3 +124,17 @@
         padding-right: 2rem;
     }
 }
+
+#section5 .row {
+    background: #F0F9FD;
+    border-radius: 40px;
+}
+#section5 .card p {
+    font-size: small;
+    color: #888888;
+}
+
+#section5 .card img {
+    width: 5.5rem;
+    height: 5.5rem;
+}
