@@ -24,17 +24,75 @@
     <!-- header js  -->
     <script src="./assets/js/header.js"></script>
 
-     <!-- Owl Carousel -->
+    <!-- swiper js -->
 
-     <link rel="stylesheet" type="text/css"
-     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
-     <link rel="stylesheet" type="text/css"
-     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
- 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
- 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+  
+    const swiper2 = new Swiper('.swiper2', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+        100: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1350: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        }
+        },
+        
+        
+        
+        
+
+        // Navigation arrows
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+
+});
+</script>
+
+
 
      <!-- jquery  -->
      <script
@@ -369,43 +427,272 @@
                 </div>
 
                 <div class="card-group gap-4">
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
+                    <div class="card" >
+                      <img src="./assets/img/Rectangle 2116.png" style="height: 7rem;width: 7rem;" class="card-img-top" alt="...">
                       <div class="card-body">
-                        <p class="card-title" style="color:#677177">This is our most affordable
+                        <p class="card-title text-center" style="color:#677177">This is our most affordable
                             plan to get started!e</p>
-                        <p class="card-text">
-                            <span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>1 Domain
-                        </p>
-                        <p class="card-text">
-                            <span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>1 Domain
-                        </p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>1 Domain</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>20k Visits</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>10 Databases</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Free SSL</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>100GB Bandwidth</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Free Malware Scanner</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Web Users</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Git Support</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>24x7 Support</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>99.5% Up time</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Daily Backups</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Free Domain 1year</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Wordpress Smart Updates</p>
+                        <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Staging and production</p>
+
+                        
+                        
                       </div>
-                      <div class="card-footer text-center">
+                      <div class="card-footer text-center pb-3">
                         <button type="button" class="btn btn-outline-primary col-10">Primary</button>
                       </div>
                     </div>
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                      </div>
+
+                    <div class="card" >
+                        <img src="./assets/img/Rectangle 2116.png" style="height: 7rem;width: 7rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-title text-center" style="color:#677177">This is our most affordable
+                              plan to get started!e</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>1 Domain</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>20k Visits</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>10 Databases</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Free SSL</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>100GB Bandwidth</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Free Malware Scanner</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Web Users</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Git Support</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>24x7 Support</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>99.5% Up time</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Daily Backups</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Free Domain 1year</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Wordpress Smart Updates</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Staging and production</p>
+  
+                          
+                          
+                        </div>
+                        <div class="card-footer text-center pb-3">
+                          <button type="button" class="btn btn-outline-primary col-10">Primary</button>
+                        </div>
                     </div>
-                    <div class="card">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+
+
+                    <div class="card" >
+                        <img src="./assets/img/Rectangle 2116.png" style="height: 7rem;width: 7rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-title text-center" style="color:#677177">This is our most affordable
+                              plan to get started!e</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>1 Domain</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>20k Visits</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>10 Databases</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Free SSL</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>100GB Bandwidth</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Free Malware Scanner</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Web Users</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Git Support</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>24x7 Support</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>99.5% Up time</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Daily Backups</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Free Domain 1year</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Wordpress Smart Updates</p>
+                          <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/tick.png" class="img-fluid" style="height: 1rem; width: 1rem;"></div></span>Staging and production</p>
+  
+                          
+                          
+                        </div>
+                        <div class="card-footer text-center pb-3">
+                          <button type="button" class="btn btn-outline-primary col-10">Primary</button>
+                        </div>
                       </div>
-                      <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+
+                    
+            </section>
+
+            <section id="section7" class="p-5 text-white">
+                <div class="row py-5">
+                    <div class="col-lg-6 col-md-6 col-sm-6 py-3">
+                        <h1><b>We Hosted 1000+ Websites Monthly Successfully & counting</b></h1>
+                    </div>
+                </div>
+
+                <div class="row py-5">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <div class="card-group gap-4">
+                            <div class="card py-4">
+                              <div class="card-body text-center">
+                                <h1 class="card-title"><b>21K</b></h1>
+                                <p class="card-text text-center"><b>Registered Domains</b></p>
+                              </div>
+                            </div>
+                            <div class="card py-4">
+                              <div class="card-body text-center">
+                                <h1 class="card-title"><b>17K</b></h1>
+                                <p class="card-text text-center"><b>Happy Clients</b></p>
+                              </div>
+                            </div>
+                            <div class="card py-4">
+                              <div class="card-body text-center">
+                                <h1 class="card-title"><b>13+</b></h1>
+                                <p class="card-text text-center"><b>Certified Support Team</b></p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section8" class="py-5">
+                <div class="row py-4">
+                    <div class="col text-center py-3">
+                        <h1><b>Clients Feedback</b></h1>
+                        <h3>What our Clients Says</h3>
+                        <p style="color: #888888;">2100+ happy customers. Here's what our customers say</p>
+                    </div>
+                </div>
+
+                <!-- review section start -->
+    <div class="row pt-5" id="swiper2">
+        <!-- <div class="col px-5 pb-4 text-white d-flex justify-content-center">
+            <h4><b>Client Testimonials</b></h4>
+        </div> -->
+        <!-- Swiper -->
+        <div class="swiper2 swiper px-5 pb-5 card-group">
+            <div class="swiper-wrapper pb-5 ">
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/inspiringindians-test.png" style="width: 12rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I am satisfied, and the manner in which this team carried out their duties increased my sales, and there is currently no difficulty. It was completed exactly according to my instructions, and I am grateful. I will undoubtedly collaborate with them in the future.</p>
+                      <div class="card-footer border-0">
+                        <h6>Saran</h6>
+                        <p>From inspiring indians</p>
                       </div>
                     </div>
                   </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-80">
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/futecttech-test.png" style="width: 8rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I was right to be sceptical about getting a logo and website designed for my startup. I choose Skygoal Tech because they were able to comprehend our needs. They were on schedule with the project delivery and had fantastic communication.</p>
+                      <div class="card-footer border-0">
+                        <h6>Dhanush</h6>
+                        <p>From Future Tech It Global</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-80">
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/phlox energy-test.png" style="width: 8rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I'd seen folks praising their work before and thought I'd give it a shot to give a project . I'm quite happy with the outcome. I wasn't expecting much, maybe some grasp of my industry or some ideas, but they went above and beyond and designed a logo based on my tastes after considering all of the variables I gave at the outset. That was also incorporated into their artistic concept. The team is also incredibly kind and responsive.</p>
+                      <div class="card-footer border-0">
+                        <h6>sirazuddin</h6>
+                        <p>From Pholex Energy </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-80">
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/inspiringindians-test.png" style="width: 12rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I recommend this team of individuals, they are totally awesome and great to work with they just don't take your word for it, they truly observe what is happening and analyze, the moment they see things are not working they make changes</p>
+                      <div class="card-footer border-0">
+                        <h6>------</h6>
+                        <p>From Newishkart</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="card h-80">
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/arrowMonk-test.png" style="width: 12rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I have to say I'm impressed. I have a friend who is a Marketing Agency owner and he recommended you guys. I must say, this has been a great experience so far!</p>
+                      <div class="card-footer border-0">
+                        <h6>-----</h6>
+                        <p>From Arrowmonk</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card h-80" >
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/evergreen-test.png" style="width: 5rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I had contacted a few web developers to make my website, they took my money and did nothing. I then came across this young team, they designed the site on time and within budget.I was happy with my service and i will suggest to take a service from this team.</p>
+                      <div class="card-footer border-0">
+                        <h6>Harshit</h6>
+                        <p>From Evergreeninfra</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="card h-80" >
+                    <div class="px-5 py-3 text-center" id="image">
+                        <img src="./assets/img/leteducate-logo-test.png" style="width: 15rem;height: 5rem;" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text px-3">I have dealt with few web designer but skygoaltech has the best team to provide service and they are very helpful i love this team because they are not only developers but they can suggest you what is the right thing to do for your business.</p>
+                      <div class="card-footer border-0">
+                        <h6>Teja </h6>
+                        <p>From Leteducate</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+
+        </div>
+
+
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Add Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+
+        </div>
+    </div>
+
+
             </section>
 
 
