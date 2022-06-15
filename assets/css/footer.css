@@ -1,0 +1,42 @@
+footer p {
+    font-size: small;
+    color: #888888;
+}
+
+footer h5 {
+    color: #0766F4;
+}
+
+footer #col1 {
+    border-right:  2.4px solid rgba(0, 0, 0, 0.2);
+}
+
+footer #col2 {
+    border-right:  2.4px solid rgba(0, 0, 0, 0.2);
+}
+footer  #col3 {
+    border-right:  2.4px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:767px) {
+    footer #col1 {
+        border: none;
+    }
+    footer #col2 {
+        border: none;
+    }
+    footer #col3 {
+        border: none;
+    }
+    
+}
+
+footer #row1 {
+    border-bottom: 2.4px solid rgba(0, 0, 0, 0.2);
+}
+
+ 
+footer #row2 #col5 img {
+    height:3rem;
+    width: 3rem;
+}
