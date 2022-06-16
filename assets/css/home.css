@@ -254,3 +254,22 @@
 #section6 #card2 .card-body p{
     color: white;
 }
+
+#section6 .btn {
+    border-radius: 10px;
+}
+
+#section6 .button2 {
+    border: 1px solid #4C3FFC;
+    color: #4C3FFC;
+}
+
+#section6 .button2:hover {
+    background-color: #4C3FFC;
+    color: white;
+}
+
+#section6 .button3 {
+    background-color: #4C3FFC;
+    color: white;
+}
