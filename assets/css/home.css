@@ -164,7 +164,7 @@
 
 
 #swiper2 {
-    background-color: #418DDC;
+    /* background-color: #418DDC; */
 
 }
 
@@ -228,4 +228,29 @@
 
 #section7 .card h1{
     font-size: 4rem;
+}
+
+
+#section6 .card-body {
+    padding-left: 2rem;
+}
+
+#section6 #card1 .card-body p {
+    color: #4C3FFC;
+}
+
+#section6 #card3 .card-body p {
+    color: #4C3FFC;
+}
+
+#section6 #card2 {
+    background-color: #4C3FFC;
+}
+
+#section6 #card2 .card-footer {
+    background-color: #4C3FFC;
+}
+
+#section6 #card2 .card-body p{
+    color: white;
 }
