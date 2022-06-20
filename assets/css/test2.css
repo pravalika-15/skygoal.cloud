@@ -1,0 +1,11 @@
+:root {
+    --scrollpos: 0;
+}
+body {
+    min-height: 600vh;
+    background-color: hsl(calc(var(--scrollpos) * 3.6), 100%, 50%);
+}
+.inner {
+    position: fixed;
+}
+ 

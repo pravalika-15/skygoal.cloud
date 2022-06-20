@@ -5,147 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/test.css">
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
     <script>
-        var wh = window.innerHeight,
-	$iphone = $('.iphone'),
-	$innerS1 = $('.innerS1'),
-	$innerS2 = $('.innerS2'),
-	$innerS3 = $('.innerS3'),
-	$innerS4 = $('.innerS4'),
-	$screenHat = $('.screenHat'),
-	$screenA = $('.screenA'),
-	$screenB = $('.screenB'),
-	$screenC = $('.screenC');
+      // From https://css-tricks.com/styling-based-on-scroll-position/
+// The debounce function receives our function as a parameter
+const debounce = (fn) => {
+  // This holds the requestAnimationFrame reference, so we can cancel it if we wish
+  let frame;
 
-	// init
-	var ctrl = new ScrollMagic.Controller({
-	    globalSceneOptions: {
-	        triggerHook: 'onLeave'
-	    }
-	});
+  // The debounce function returns a new function that can receive a variable number of arguments
+  return (...params) => {
+    // If the frame variable has been defined, clear it now, and queue for next frame
+    if (frame) {
+      cancelAnimationFrame(frame);
+    }
 
-	// Create scene
-	$("section").each(function() {
-	  
-		new ScrollMagic.Scene({
-			triggerElement: this,
-			duration: '50%'
-		})
-		.setPin(this)
-		.addTo(ctrl);
-	 
-	});
+    // Queue our function call for the next frame
+    frame = requestAnimationFrame(() => {
+      // Call our function and pass any params we received
+      fn(...params);
+    });
+  };
+};
 
-	// iPhone intro animation Tween
-	/*
-	var iphoneIntro = TweenMax.from($iphone, 1, {
-		yPercent: 50,
-		xPercent: 100,
-		ease: Cubic.easeOut
-	});
-  */
+// Reads out the scroll position and stores it in the data attribute
+// so we can use it in our stylesheets
+const storeScroll = () => {
+  var scrollPos = window.scrollY;
+  if (scrollPos > 50) {
+    document.documentElement.dataset.scroll = "anim1";
+  }
+  if (scrollPos > 100) {
+    document.documentElement.dataset.scroll = "anim2";
+  }
+  if (scrollPos > 150) {
+    document.documentElement.dataset.scroll = "anim3";
+  }
+  if (scrollPos > 200) {
+    document.documentElement.dataset.scroll = "anim4";
+  }
+  if (scrollPos > 300) {
+    document.documentElement.dataset.scroll = "anim5";
+  }
+};
 
-	// iPhone intro animation Timeline
-	var iphoneIntroTl = new TimelineMax();
-	iphoneIntroTl
-		.from($iphone, 1, {yPercent: 50,xPercent: 100, ease: Power4.easeInOut})
-		.to($innerS1, 0.5, {opacity: 0, yPercent: -5, scale: 0.98}, '0');
+// Listen for new scroll events, here we debounce our `storeScroll` function
+document.addEventListener("scroll", debounce(storeScroll), { passive: true });
 
-	// iPhone back to stylesheet position
-	new ScrollMagic.Scene({
-		duration: '70%'
-	})
-	.setTween(iphoneIntroTl)
-	.triggerElement($('body')[0])
-	.addTo(ctrl);
-	
-	// Animate the hat up, letter A in and fade in content of section 2
-  var iphoneContentHat = new TimelineMax();
-  iphoneContentHat		
-    .to($screenHat, 1, {yPercent: -50, ease: Power4.easeOut})
-    .fromTo($screenA, 1, {yPercent: 20, autoAlpha: 0, scale: 0.8}, {yPercent: 0, autoAlpha: 1, scale: 1, ease: Power4.easeOut}, '0')
-    .from($innerS2, 1, {autoAlpha: 0}, '-=0.3');
+// Update scroll position for first time
+storeScroll();
 
-  new ScrollMagic.Scene({
-    offset: wh*0.6,
-    triggerElement: $('body')[0],
-    duration: '80%'
-  })
-  .setTween(iphoneContentHat)
-  .addIndicators()
-  .addTo(ctrl);
-
-	// Animate letter A out, letter B in and fade in content of section 3
-  var iphoneContent1Tl = new TimelineMax();
-  iphoneContent1Tl		
-    .to($screenA, 0.3, {yPercent: -30, autoAlpha: 0, ease: Power4.easeInOut})
-    .fromTo($screenB, 1, {yPercent: 20, autoAlpha: 0}, {yPercent: 0, autoAlpha: 1, ease: Power4.easeInOut})
-    .from($innerS3, 1, {autoAlpha: 0}, '-=0.7');
-
-  new ScrollMagic.Scene({
-    triggerElement: $('.innerS2 h2')[0],
-    duration: '50%'
-  })
-  .setTween(iphoneContent1Tl)
-  .addTo(ctrl);
-
-	// Animate letter B out, letter C in and fade in content of section 4
-  var iphoneContent2Tl = new TimelineMax();
-  iphoneContent2Tl		
-    .to($screenB, 0.3, {yPercent: -30, autoAlpha: 0, ease: Power4.easeInOut})
-    .fromTo($screenC, 1, {yPercent: 20, autoAlpha: 0}, {yPercent: 0, autoAlpha: 1, ease: Power4.easeInOut})
-    .from($innerS4, 1, {autoAlpha: 0}, '-=0.7');
-
-  new ScrollMagic.Scene({
-    triggerElement: $('.innerS3 h2')[0],
-    duration: '50%'
-  })
-  .setTween(iphoneContent2Tl)
-  .addTo(ctrl);
-  
     </script>
 </head>
 <body>
-    <section id="one">
-        <div class="inner innerS1">
-            <h1>Simple ScrollMagic Tutorial</h1>
-            <p>Learn how to create a <strong>simple scrolling website</strong> using ScrollMagic</p>
-        </div>
-    </section>
-    <section id="two">
-        <div class="innerText innerS2">
-            <h2>Why to learn ScrollMagic?</h2>
-            <ul class="features">
-                <li>It's great for <strong>story telling websites</strong></li>
-                <li>It gives you <strong>endless creative power</strong></li>
-                <li>It's <strong>easy to use</strong> once you get it</li>
-            </ul>
-        </div>
-    </section>
-    <section id="three">
-      <div class="innerText innerS3">
-          <h2>When to use ScrollMagic?</h2>
-          <ul class="features">
-            <li>When building <strong>interactive infographics</strong></li>
-            <li>When introducing your <strong>product or service</strong></li>
-            <li>When sharing your <strong>unique story or timeline</strong></li>
-          </ul>
+<main>
+  <div class="row">
+    
+
+    <div class="col-lg-6 col-sm-6 col-md-6 hello">
+
+      <p>Let’s get started........</p>
+      <h3>How to get started !</h3>
+        ß<p>It's easy to find and register your dream domain.</p>
+    
+      <h6 class="py-3 h1">Choose a right domain name for your blog or business.</h6>
+      <h6 class="py-3 h2">Choose a right domain name for your blog or business.</h6>
+      <h6 class="py-3 h3">Choose a right domain name for your blog or business.</h6>
+      <h6 class="py-3 h4">Choose a right domain name for your blog or business.</h6>
+
+    </div>
+
+    <div class="col-lg-6 col-sm-6 col-md-6">
+      <div class="row">
+        <img class="img-fluid" src="./assets/img/iPhone 13 Pro-1.png" id="image1">
       </div>
-    </section>
-    <section id="four">
-        <div class="innerText innerS4">
-      <h2>Want to learn more about ScrollMagic?</h2>
-          <ul class="features">
-            <li>Read the full article <a href="https://ihatetomatoes.net/simple-scrollmagic-tutorial/">Simple ScrollMagic Tutorial</a></li>
-          </ul>
+
+      <div class="row">
+        <img class="img-fluid" src="./assets/img/iPhone 13 Pro-1.png" id="image1">
       </div>
-        <div class="iphone">
-            <p class="screen screenHat"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/107366/img_scrollMagic.png" /></p>
-            <p class="screen screenA">A</p>
-            <p class="screen screenB">B</p>
-            <p class="screen screenC">C</p>
-        </div>
-    </section>
+
+      <div class="row">
+        <img class="img-fluid" src="./assets/img/iPhone 13 Pro-1.png" id="image1">
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  
+</main>
+    
 </body>
 </html>
