@@ -1,0 +1,193 @@
+#header {
+    background-image: url("../img/Group\ 14143.png");
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-position: center; 
+    background-size: 100% 100%; 
+    width: 100%;
+    height: 45rem;
+    /* padding-top: 5rem; */
+}
+
+#containerw1 #card1 {
+    background-image: url("../img/Rectangle\ 2094.png");
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+    /* width: 100%; */
+    /* height: 45rem; */
+    /* padding-top: 5rem; */
+}
+
+#containerw1 #card2 {
+    background-image: url("../img/Rectangle\ 2095.png");
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+    /* width: 100%; */
+    /* height: 45rem; */
+    /* padding-top: 5rem; */
+}
+
+#containerw1 #card3 {
+    background-image: url("../img/Rectangle\ 2096.png");
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+    /* width: 100%; */
+    /* height: 45rem; */
+    /* padding-top: 5rem; */
+}
+
+
+#containerw3 #card1 {
+    background-image: url("../img/Rectangle\ 2156.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+}
+#containerw3 #card2 {
+    background-image: url("../img/Rectangle\ 2157.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+}
+#containerw3 #card3 {
+    background-image: url("../img/Rectangle\ 2096-1.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+}
+#containerw3 #card4 {
+    background-image: url("../img/Rectangle\ 2159.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+}
+#containerw3 #card5 {
+    background-image: url("../img/Rectangle\ 2159-1.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+}
+#containerw3 #card6 {
+    background-image: url("../img/Rectangle\ 2160.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+}
+#containerw3 #card7 {
+    background-image: url("../img/Rectangle\ 2161.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+}
+#containerw3 #card8 {
+    background-image: url("../img/Rectangle\ 2162.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+}
+#containerw3 #card9 {
+    background-image: url("../img/Rectangle\ 2163.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100% 100%; 
+    height: 15rem;
+}
+
+#container1 .card {
+    border-radius: 20px;
+}
+
+#sectionw5 {
+    background-color: #7C89E1;
+}
+
+#sectionw5 .container {
+    background-color: white;
+    box-shadow: 8px 8px 80px rgba(92, 100, 172, 0.4);
+    border-radius: 20px;
+}
+
+
+#sectionw4 .card:hover {
+    transform: translate(0,-30px);
+    /* background-color: pink; */
+    border-radius: 30px 30px 0px 0px;
+}
+
+#sectionw4 .card {
+    border: none;
+}
+
+#sectionw4 #card1 {
+    background-color: #5765FB;
+}
+
+#sectionw4 #card2 {
+    background-color: #EFF2FA;
+}
+
+#sectionw4 #card3 {
+    background-color: #02C8F0;
+}
+
+#sectionw4 #card4 {
+    background-color: #F54749;
+}
+
+#sectionw4 #card5 {
+    background-color: #02C8F0;
+}
+
+#sectionw4 #card6 {
+    background-color: #F54749;
+}
+
+#sectionw4 #card7 {
+    background-color: #5765FB;
+}
+
+#sectionw4 #card8 {
+    background-color: #EFF2FA;
+}
+#sectionw4 .card p {
+    font-size: small;
+}
+
+
+#sectionw6 .card p {
+    font-size: small;
+}
+
+#sectionw6 .card-footer {
+    background-color: white;
+    border:none;
+}
+
+#sectionw6 .btn {
+    color: #5C64AC;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
+
+#sectionw6 .btn2 {
+    color: white;
+    background-color: #5C64AC;
+    border-radius: 5px;
+}
