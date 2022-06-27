@@ -191,3 +191,18 @@
     background-color: #5C64AC;
     border-radius: 5px;
 }
+
+#containerw5 {
+    background-color: #EDEDED;
+    border-radius: 40px;
+    /* padding-top: 20rem; */
+}
+
+#containerw5 #containerw51 #text11 .row{
+    background-color: white;
+    border-radius: 10px;
+}
+#containerw4 {
+    padding-bottom: 25rem;
+}
+
