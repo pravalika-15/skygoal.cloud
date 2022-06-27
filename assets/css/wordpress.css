@@ -186,7 +186,7 @@
     border-radius: 5px;
 }
 
-#sectionw6 .btn2 {
+#sectionw6 .btn:hover {
     color: white;
     background-color: #5C64AC;
     border-radius: 5px;
