@@ -206,3 +206,22 @@
     padding-bottom: 25rem;
 }
 
+.swiper2 .swiper-slide .card {
+    box-shadow: -8px -8px 32px rgba(0, 0, 0, 0.1), 8px 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.swiper2 .swiper-slide .card .card-body p{
+    font-size: small;
+    color: #989898;
+}
+
+.swiper2 .swiper-slide .card .card-footer .btn{
+    background-color: #5C64AC;
+    color: white;
+    border-radius: 5px;
+}
+
+.swiper2 .swiper-slide .card .card-footer {
+    background-color: white;
+}
