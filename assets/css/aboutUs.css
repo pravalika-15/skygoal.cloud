@@ -1,0 +1,51 @@
+@media screen and (min-width: 600px) {
+    .banner {
+        padding-top: 130px;
+        padding-bottom: 240px;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .banner {
+        padding-top: 70px;
+        padding-bottom: 160px;
+    }
+}
+
+.fh {
+    margin-bottom: -1px;
+}
+.banner-img {
+    width: 85%;
+}
+@media screen and (min-width: 600px) {
+    .img-grup {
+        margin-top: -330px;
+    }  
+}
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .img-grup {
+        margin-top: -250px;
+    }  
+}
+.border {
+    border: none;
+}
+@media screen and (min-width: 600px) {
+    .ptmap {
+        padding-top: 200px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .world-bg {
+        height: 700px;
+        width: 85%;
+        margin: auto;
+    } 
+    .world-bg {
+        background-image: url('../img/World\ Map.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    } 
+}
+
