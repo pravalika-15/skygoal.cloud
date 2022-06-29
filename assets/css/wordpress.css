@@ -227,27 +227,10 @@
 }
 
 
-#sectionw7 .row .btn:hover {
-    border: black;
+#sectionw7 button:hover {
+    /* border: 3px solid black; */
+    background-color: #BDBDBD;
 }
-
-#sectionw7 .row img:hover #btn1{
-    border: black;
-}
-
-#sectionw7 .row #btn1 {
-    border: black;
-}
-
-#sectionw7 .row #btn2 {
-    border: black;
-}
-
-#sectionw7 .card:hover {
-    border: black;
-}
-
-
 
 
 #container2 .card {
