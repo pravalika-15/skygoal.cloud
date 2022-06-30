@@ -1,3 +1,14 @@
+.popularTag {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.popularTag h5 {
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
 #header1 {
     background-image: url("../img/Group\ cloud.png");
     background-repeat: no-repeat;
