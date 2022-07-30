@@ -331,3 +331,14 @@
     background-color: #5C64AC;
     color: white;
 }
+
+#learn {
+    color: #5C64AC;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
+#learn:hover {
+    color: white;
+    background-color: #5C64AC;
+    border-radius: 5px;
+}
