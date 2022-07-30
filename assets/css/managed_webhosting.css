@@ -1,0 +1,27 @@
+#learn {
+    color: #5C64AC;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
+#learn:hover {
+    color: white;
+    background-color: #5C64AC;
+    border-radius: 5px;
+}
+
+.btn {
+    color: #5C64AC;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #5C64AC;
+    border-radius: 5px;
+}
+
+#container7 .card-footer {
+    background-color: white;
+    border: none;
+}
