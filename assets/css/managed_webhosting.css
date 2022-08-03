@@ -15,7 +15,15 @@
     border-radius: 5px;
 }
 
+
+
 .btn:hover {
+    color: white;
+    background-color: #5C64AC;
+    border-radius: 5px;
+}
+
+#button {
     color: white;
     background-color: #5C64AC;
     border-radius: 5px;
