@@ -15,7 +15,17 @@
     border-radius: 5px;
 }
 
+.btn2 {
+    color: #5C64AC;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
 
+#btn2 {
+    color: #5C64AC;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
 
 .btn:hover {
     color: white;
@@ -117,6 +127,12 @@
     border-radius: 5px;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+#container2 .btn2 {
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid #5C64AC;
 }
 
 #container2 .button2 {
