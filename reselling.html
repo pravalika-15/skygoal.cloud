@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkygoalCloud</title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <!-- style sheets -->
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/home.css"> -->
+
+     <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
+     <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
+
+    <!-- about us css link  -->
+    <link rel="stylesheet" href="./assets/css/reselling.css">
+
+    <!-- header js  -->
+    <script src="./assets/js/header.js"></script>
+
+    <!-- jquery  -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#footer").load("footer.html"); 
+    });
+    </script>
+    <!-- swiper js -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+
+    <!-- Initialize Swiper -->
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+  
+    const swiper2 = new Swiper('.swiper2', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+        100: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1350: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        }
+        },
+        
+        
+        
+        
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.arrow-right',
+            prevEl: '.arrow-left',
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+
+});
+</script>
+
+
+
+    
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/skygoal cloud 1.png">
+</head>
+
+<body>
+    <section style="overflow-x: hidden;">
+        <!-- <div id="header"></div> -->
+        <!-- nav bar  -->
+        <div id="header"></div>
+        <div class="text-center" id="header1">
+            <div class="py-5">
+                <h2>The power of SSD + Simplicity of Pleskpanel</h2>
+                <p>Power up your business with cloud hosting | 2X Faster | SSD Storage</p>
+                <p><b>Trust your site to the world's #1 web host.</b></p>
+            </div>
+            
+        </div>
+
+        
+        <!-- <section class="container" id="section1">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 py-5 px-2 my-auto">
+                    <h3><b>Powerful & Scalable Server with Complete Root Access</b></h3>
+                    <h5 class="" style="color: #5C64AC;">Trust your site to the world's #1 web host.</h5>
+                    <p>Robust Dedicated Servers | High-performance Server | DDoS Protection</p>
+                    <a class="btn" href="" id="button">Get Started</a>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img class="img-fluid" src="./assets/img/Group 14074r.png">
+                </div>
+            </div>
+        </section> -->
+        <section>
+            <div class="mt-5">
+                <h4 class="fw-bold text-center">Why choose Wordpress Hosting</h4>
+            </div>
+            <div class="mt-5">
+                <div class="container mb-5">
+                    <div class="row justify-content-evenly gy-5">
+                       <div class="col-md-3">
+                        <div>
+                            <div class="">
+                                <img class="img-fluid" src="./assets/img/Rectangle 2094r.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <div>
+                                    <h5 class="fw-bold" style="color: white; margin-top: -60px">Same-Day Setup</h5>
+                                </div>
+                                <div>
+                                    <h6 class="fw-normal mt-5">Get your setup done on the same day of buying dedicated hosting server plans.</h6>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-md-3">
+                        <div>
+                            <div class="">
+                                <img class="img-fluid" src="./assets/img/Rectangle 2095r.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <div>
+                                    <h5 class="fw-bold" style="color: white; margin-top: -60px">Free Migration</h5>
+                                </div>
+                                <div>
+                                    <h6 class="fw-normal mt-5">Skygoal not charging extra cost for migration. It’s free of cost.</h6>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-md-3">
+                        <div>
+                            <div class="">
+                                <img  class="img-fluid" src="./assets/img/Rectangle 2096r.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <div>
+                                    <h5 class="fw-bold" style="color: white; margin-top: -60px">99.99% Uptime</h5>
+                                </div>
+                                <div>
+                                    <h6 class="fw-normal mt-5">Our dedicated server hosting offer 99.99% uptime without fail. Always get ahead one step ahead in performance.</h6>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+
+                       <div class="col-md-3">
+                        <div>
+                            <div class="">
+                                <img  class="img-fluid" src="./assets/img/Rectangle 2097r.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <div>
+                                    <h5 class="fw-bold" style="color: white; margin-top: -60px">24/7 Customer Support</h5>
+                                </div>
+                                <div>
+                                    <h6 class="fw-normal mt-5">24/7 Customer Support. Our dedicated technical support team is ready to resolve all queries.</h6>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <section class="" id="sectionw2">
+            <div class="container py-5" id="container2">
+                <div class="row">
+                    <div class="col">
+                    
+                        <div class="card mb-3">
+                            <div class="row g-0 py-5">
+                              
+                              <h1 class="text-center"><b>Pricing Plans</b></h1>
+                              <h3 class="text-center">Choose your Web Hosting Plans</h3>
+                              <p class="text-center" style="color: #888888;">Get a fast, reliable and powerful hosting at low cost.</p>
+
+                              <div class="card-group gap-4">
+                                <div class="card" id="card1">
+                                  <!-- <img src="./assets/img/Rectangle 2116.png" style="height: 7rem;width: 7rem;" class="card-img-top" alt="..."> -->
+                                  <div class="card-body py-5">
+                                    <div class="purple">
+                                      <h3>S1X</h3>
+                                      <p class="card-title d-inline" style="color:#677177"><p class="d-inline">This is our most affordable plan to get started!</p></p>
+                                      <h2 class="d-inline">₹240 <span style="font-size: 22px;">/ month</span></h2>
+                                      <p class="py-3">You have saved <span style="color: black; font-size: 20px;">80%</span> on this plan</p>
+                                    </div>
+                                    <button type="button" class="btn btn-outline-primary  col-10 button3">Promocode: BSCLD <img src="assets/img/double-square-white.png"></button>
+                                    
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>1 Domain</p>
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>40GB Disk Space</p>
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>20k Visits</p>
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>10 Databases</p>
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Free SSL</p>
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>100GB Bandwidth</p>
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Free Malware Scanner</p>
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Web Users</p>
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Git Support</p>
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>24x7 Support</p>
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>99.5% Up time</p>
+                                    <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Daily Backups</p>
+
+
+            
+                                    
+                                    
+                                  </div>
+                                  <div class="card-footer text-center pb-3">
+                                    <button type="button" class="btn btn-outline-primary col-10 button2">Choose plan</button>
+                                  </div>
+                                </div>
+            
+                                <div class="card text-white" id="card2">
+                                    <!-- <img src="./assets/img/Rectangle 2116.png" style="height: 7rem;width: 7rem;" class="card-img-top" alt="..."> -->
+                                    <div class="card-body py-5">
+                                      <div class="purple">
+                                        <h3>S20X</h3>
+                                        <p class="card-title d-inline" style="color:#677177"><p class="d-inline">896 of our clients choose this plan. Get the best value.</p></p>
+                                        <h2 class="d-inline">₹400 <span style="font-size: 22px;">/ month</span></h2>
+                                        <p class="py-3">You have saved <span style="font-size: 20px;">80%</span> on this plan</p>
+                                      </div>
+                                      <button type="button" class="btn btn-light col-10">Promocode: BSCLD </button>
+
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>20 Domain</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>100GB Disk Space</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>50k Visits</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Unlimited Databases</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Free SSL</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>150GB Bandwidth</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Free Malware Scanner</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Web Users</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Git Support</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>24x7 Support</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>99.5% Up time</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Daily Backups
+                                      </p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Wordpress Smart Updates</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow-white.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Staging and production</p>
+              
+                                      
+                                      
+                                    </div>
+                                    <div class="card-footer text-center pb-3">
+                                      <button type="button" class="btn2 btn-light col-10" style=" color: #5C64AC;">Choose plan</button>
+                                    </div>
+                                </div>
+            
+            
+                                <div class="card" id="card3">
+                                    <!-- <img src="./assets/img/Rectangle 2116.png" style="height: 7rem;width: 7rem;" class="card-img-top" alt="..."> -->
+                                    <div class="card-body py-5">
+                                      <div class="purple">
+                                        <h3>SNX</h3>
+                                        <p class="card-title d-inline" style="color:#677177"><p class="d-inline">For larger business or those  seeking advanced services.</p></p>
+                                          <h2 class="d-inline">₹800 <span style="font-size: 22px;">/ month</span></h2>
+                                          <p class="py-3">You have saved <span style="font-size: 20px; color: black;">80%</span> on this plan</p>
+                                      </div>
+                                      <button type="button" class="btn btn-outline-primary col-10 button3">Promocode: BSCLD</button>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>1 Domain</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>20k Visits</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>10 Databases</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Free SSL</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>100GB Bandwidth</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Free Malware Scanner</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Web Users</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Git Support</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>24x7 Support</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>99.5% Up time</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Daily Backups</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Free Domain 1year</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Wordpress Smart Updates</p>
+                                      <p class="card-text"><span><div class="px-2 d-inline"><img src="./assets/img/arrow.png" class="img-fluid" style="height: 14px; width: 16px;"></div></span>Staging and production</p>
+              
+                                      
+                                      
+                                    </div>
+                                    <div class="card-footer text-center pb-3">
+                                      <button type="button" class="btn btn-outline-primary col-10 button2">Choose plan</button>
+                                    </div>
+                                  </div>
+                              </div>    
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </section>
+
+        <section class="" id="container6">
+            <div class="">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 my-auto px-5">
+                        <h3 class="text-white py-3"><b>All Reseller Hosting Plans Come with 30-days Money Back Guarantee</b></h3>
+                        <a class="btn py-3" id="btn2">Get started</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img class="img-fluid"  src="/assets/img/image 8.png">
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        
+
+
+
+        
+
+        <section>
+            <div class="mt-5">
+                <h2 class="fw-bold text-center">Find your winning domain</h2>
+                <h4 class="fw-bold text-center">Get a fast, reliable and powerful hosting at low cost.</h4>
+                <h4 class="fw-bold text-center">Register your dream domain</h4>
+            </div>
+            <div class="mt-5">
+                <div class="container mb-5">
+                    <div class="row justify-content-evenly gy-5">
+                       <div class="col-md-4">
+                        <div>
+                            <div class="">
+                                <img class="img-fluid" src="./assets/img/Rectangle 2094r1.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <div>
+                                    <h4 class="fw-bold" style="color: white; margin-top: -60px">Create Custom hosting</h4>
+                                </div>
+                                <div>
+                                    <h4 class="fw-normal mt-5">Create your custom hosting package with your limits. Set specific bandwidth, storage and database etc.</h4>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-md-4">
+                        <div>
+                            <div class="">
+                                <img class="img-fluid" src="./assets/img/Rectangle 2095r1.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <div>
+                                    <h4 class="fw-bold" style="color: white; margin-top: -60px">Accept payments</h4>
+                                </div>
+                                <div>
+                                    <h4 class="fw-normal mt-5">Integrated payment system for easy customer billing.</h4>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-md-4">
+                        <div>
+                            <div class="">
+                                <img  class="img-fluid" src="./assets/img/Rectangle 2096r1.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <div>
+                                    <h4 class="fw-bold" style="color: white; margin-top: -60px">Get Paid</h4>
+                                </div>
+                                <div>
+                                    <h4 class="fw-normal mt-5">Run your own hosting business and start earn.</h4>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-md-4">
+                        <div>
+                            <div class="">
+                                <img  class="img-fluid" src="./assets/img/Rectangle 2145r1.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <div>
+                                    <h4 class="fw-bold" style="color: white; margin-top: -60px">Global support</h4>
+                                </div>
+                                <div>
+                                    <h4 class="fw-normal mt-5">We provide 24*7 support.</h4>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div class="col-md-4">
+                        <div>
+                            <div class="">
+                                <img class="img-fluid" src="./assets/img/Rectangle 2146r1.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <div>
+                                    <h4 class="fw-bold" style="color: white; margin-top: -60px">Define pricing</h4>
+                                </div>
+                                <div>
+                                    <h4 class="fw-normal mt-5">Customize your hosting plans pricing.</h4>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       
+                       <div class="col-md-4">
+                        <div>
+                            <div class="">
+                                <img class="img-fluid" src="./assets/img/Rectangle 2147r1.png" alt="">
+                            </div>
+                            <div class="text-center">
+                                <div>
+                                    <h4 class="fw-bold" style="color: white; margin-top: -60px">Get customer</h4>
+                                </div>
+                                <div>
+                                    <h4 class="fw-normal mt-5">Our reseller hosting helps you to promote your business on our platform.</h4>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container py-5" >
+            <div class="text-center" id="containerw4">
+                <h2><b>QUESTIONS</b></h2>
+                <h2><b>Some of the frequently asked questions of Us</b></h2>
+            </div>
+            <div class="container px-5" id="containerw5">
+                <div class="text-center px-5 pb-5">
+                    <img src="./assets/img/Frame.png" style="width: 556.94px;height:523px; margin-top: -24rem;" class="img-fluid">
+                </div>
+                <div class="" id="containerw51">
+                    <div class="py-2" id="text11">
+                        <div class="row px-2 py-3 d-flex justify-content-between">
+                            <div class="col-lg-11 col-md-11 col-sm-10">
+                                <img src="./assets/img/Vector.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline"><span><h6 class="d-inline px-3">How does web hosting work ?</h6></span>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-2">
+                                <img src="./assets/img/+.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline">
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="py-2" id="text11">
+                        <div class="row px-2 py-3 d-flex justify-content-between">
+                            <div class="col-lg-11 col-md-11 col-sm-10">
+                                <img src="./assets/img/Vector.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline"><span><h6 class="d-inline px-3">What kind of web hosting do I need ?</h6></span>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-2">
+                                <img src="./assets/img/+.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline">
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="py-2" id="text11">
+                        <div class="row px-2 py-3 d-flex justify-content-between">
+                            <div class="col-lg-11 col-md-11 col-sm-10">
+                                <img src="./assets/img/Vector.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline"><span><h6 class="d-inline px-3">How do I choose the right domain registrar ?</h6></span>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-2">
+                                <img src="./assets/img/+.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline">
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="py-2" id="text11">
+                        <div class="row px-2 py-3 d-flex justify-content-between">
+                            <div class="col-lg-11 col-md-11 col-sm-10">
+                                <img src="./assets/img/Vector.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline"><span><h6 class="d-inline px-3">What can I use to build my website ?</h6></span>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-2">
+                                <img src="./assets/img/+.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline">
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="py-2" id="text11">
+                        <div class="row px-2 py-3 d-flex justify-content-between">
+                            <div class="col-lg-11 col-md-11 col-sm-10">
+                                <img src="./assets/img/Vector.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline"><span><h6 class="d-inline px-3">What should I do if my desire domain name is not available ?</h6></span>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-2">
+                                <img src="./assets/img/+.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline">
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="pt-2 pb-5" id="text11">
+                        <div class="row px-2 py-3 d-flex justify-content-between">
+                            <div class="col-lg-11 col-md-11 col-sm-10">
+                                <img src="./assets/img/Vector.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline"><span><h6 class="d-inline px-3">What makes us different from Others?</h6></span>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-2">
+                                <img src="./assets/img/+.png" style="width: 26.67px;height:33.33px;" class="img-fluid d-inline">
+                            </div>
+                        </div>  
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+        <div class="container py-5" id="container7">
+            <div class="text-center">
+                <h4>OUR SERVICES</h4>
+                <h3><b>Need more power?</b></h3>
+            </div>
+            <div class="card-group gap-4 py-5">
+
+                <div class="card border-0 h-100">
+                  <img src="./assets/img/Group 14111.png" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Reliable Web Hosting</h5>
+                    <p class="">Specialized Wordpress hosting dedicated for wordpress website for their performance, reliability and security.</p>
+                    <div class="card-footer">
+                        <a href="" class="btn">Learn more</a>
+                    </div>
+                  </div>  
+                </div>
+                
+                <div class="card border-0 h-100">
+                    <img src="./assets/img/Group 14156.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Dedicated Server</h5>
+                      <p class="">Every Website needs dedicated storage and resource. Get a Dedicated server at reasonable price.</p>
+                      <div class="card-footer">
+                          <a href="" class="btn">Learn more</a>
+                      </div>
+                    </div>  
+                </div>
+
+
+                <div class="card border-0 h-100">
+                    <img src="./assets/img/Group 14112.png" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Cloud Hosting</h5>
+                      <p class="">For more bandwidth and high performance. Check cloud hosting features. Dedicated for high speed & extra storage for your website data.</p>
+                      <div class="card-footer">
+                          <a href="" class="btn">Learn more</a>
+                      </div>
+                    </div>  
+                </div>
+
+            </div>
+        </div>
+
+
+        <section class="py-5" id="sectionw7">
+            <div class="text-center" id="containerw6">
+                <h4>Videos helps you to learn</h4>
+                <h2><b>Some of the frequently asked questions of Us</b></h2>
+            </div>
+            <div class="row px-5">
+                <div class="col text-end px-5">
+                    <!-- Add Arrows -->
+                    <div class="d-inline arrow-left " id="btn1">
+                        <button class="btn"><span><img src="./assets/img/left-arrow.png" style="width: 40px;height: 35.01px;" class="img-fluid" id="btn-d1"></span></button>
+                        <!-- <button class="btn"><span><img src="./assets/img/left-arrow-l.png" style="width: 40px;height: 35.01px;" class="img-fluid" id="btn-l1"></span></button> -->
+                    </div>
+                    <div class="d-inline arrow-right " id="btn2">
+                        <button class="btn"><span><img src="./assets/img/right-arrow.png" style="width: 40px;height: 35.01px;" class="img-fluid" id="btn-d2"></span></button>
+                        <!-- <button class="btn"><span><img src="./assets/img/right-arrow-l.png" style="width: 40px;height: 35.01px;" class="img-fluid" id="btn-l2" ></span></button> -->
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="swiper2 swiper px-5 py-5 card-group">
+            <div class="swiper-wrapper">
+    
+            <div class="swiper-slide">
+                <div class="card" style="width: 22rem;">
+                    <div class="text-center p-3" id="image">
+                        <img src="./assets/img/Rectangle 2219.png"  class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body p-3">
+                        <h5>Reliable Web Hosting</h5>
+                        <p class="card-text">specialized qwordpres hosting dedicated forwordpress website for their performance, reliab,ity and security.</p>
+                      <div class="card-footer border-0 p-3">
+                        <div class="row">
+                            <div class="col-6 my-auto">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./assets/img/Group 14160.png"  class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <p>4+ Views</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 my-auto">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+    
+    
+            <div class="swiper-slide">
+                <div class="card" style="width: 22rem;">
+                    <div class="text-center p-3" id="image">
+                        <img src="./assets/img/Rectangle 2220.png"  class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body p-3">
+                        <h5>Reliable Web Hosting</h5>
+                        <p class="card-text">specialized qwordpres hosting dedicated forwordpress website for their performance, reliab,ity and security.</p>
+                      <div class="card-footer border-0 p-3">
+                        <div class="row">
+                            <div class="col-6 my-auto">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./assets/img/Group 14160.png"  class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <p>4+ Views</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col my-auto">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+    
+    
+            <div class="swiper-slide">
+                <div class="card" style="width: 22rem;">
+                    <div class="text-center p-3" id="image">
+                        <img src="./assets/img/Rectangle 2221.png"  class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body p-3">
+                        <h5>Reliable Web Hosting</h5>
+                        <p class="card-text">specialized qwordpres hosting dedicated forwordpress website for their performance, reliab,ity and security.</p>
+                      <div class="card-footer border-0 p-3">
+                        <div class="row">
+                            <div class="col-6 my-auto">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./assets/img/Group 14160.png"  class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <p>4+ Views</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col my-auto">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+    
+            <div class="swiper-slide">
+                <div class="card" style="width: 22rem;">
+                    <div class="text-center p-3" id="image">
+                        <img src="./assets/img/Rectangle 2219.png"  class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body p-3">
+                        <h5>Reliable Web Hosting</h5>
+                        <p class="card-text">specialized qwordpres hosting dedicated forwordpress website for their performance, reliab,ity and security.</p>
+                      <div class="card-footer border-0 p-3">
+                        <div class="row">
+                            <div class="col-6 my-auto">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./assets/img/Group 14160.png"  class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <p>4+ Views</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col my-auto">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+    
+        </div>
+    
+    
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+    
+        </div>
+    </div>
+        </section>
+        
+
+        <div id="footer"></div>
+
+            
+        
+
+    </section>
+
+
+    <script>
+        function myFunction1() {
+          var x = document.getElementById("p1");
+          var y = document.getElementById("p11");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.backgroundColor = "#5C64AC";
+            y.style.color = "white"
+          } else {
+            x.style.display = "none";
+            y.style.backgroundColor = "white";
+            y.style.color = "black"
+
+          }
+        }
+        function myFunction2() {
+          var x = document.getElementById("p2");
+          var y = document.getElementById("p22");
+
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.backgroundColor = "#5C64AC";
+            y.style.color = "white"
+          } else {
+            x.style.display = "none";
+            y.style.backgroundColor = "white";
+            y.style.color = "black"
+
+          }
+        }
+        function myFunction3() {
+          var x = document.getElementById("p3");
+          var y = document.getElementById("p33");
+
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.backgroundColor = "#5C64AC";
+            y.style.color = "white"
+          } else {
+            x.style.display = "none";
+            y.style.backgroundColor = "white";
+            y.style.color = "black"
+
+          }
+        }
+        function myFunction4() {
+          var x = document.getElementById("p4");
+          var y = document.getElementById("p44");
+
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.backgroundColor = "#5C64AC";
+            y.style.color = "white"
+          } else {
+            x.style.display = "none";
+            y.style.backgroundColor = "white";
+            y.style.color = "black"
+
+          }
+        }
+        function myFunction5() {
+          var x = document.getElementById("p5");
+          var y = document.getElementById("p55");
+
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.backgroundColor = "#5C64AC";
+            y.style.color = "white"
+          } else {
+            x.style.display = "none";
+            y.style.backgroundColor = "white";
+            y.style.color = "black"
+
+          }
+        }
+
+    </script>
+</body>
+</html>
