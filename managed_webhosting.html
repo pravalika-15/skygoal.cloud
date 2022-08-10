@@ -38,6 +38,69 @@
     });
     </script>
 
+    <!-- swiper js -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+
+    <!-- Initialize Swiper -->
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+  
+    const swiper2 = new Swiper('.swiper2', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        freeMode: true,
+        loop: true,
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+        100: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        
+        900: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1350: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        }
+        },
+        
+        
+        
+        
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.arrow-right',
+            prevEl: '.arrow-left',
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //     el: '.swiper-scrollbar',
+        // },
+
+});
+</script>
+
+
     
 
     <!-- favicon -->
@@ -49,7 +112,15 @@
         <!-- <div id="header"></div> -->
         <!-- nav bar  -->
         <div id="header"></div>
-        <section class="container" id="section1">
+        <div class="text-center" id="header1">
+            <div class="py-5">
+                <h2>Powerful & Scalable Server with Complete Root Access</h2>
+                <p>Robust Dedicated Servers | High-performance Server | DDoS Protection</p>
+                <p><b>Trust your site to the world's #1 web host.</b></p>
+            </div>
+            
+        </div>
+        <!-- <section class="container" id="section1">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 py-5 px-2 my-auto">
                     <h3><b>Powerful & Scalable Server with Complete Root Access</b></h3>
@@ -62,7 +133,7 @@
                     <img class="img-fluid" src="./assets/img/Group 14074.png">
                 </div>
             </div>
-        </section>
+        </section> -->
         <section>
             <div class="mt-5">
                 <h4 class="fw-bold text-center">Why choose Wordpress Hosting</h4>
@@ -296,7 +367,7 @@
                                     <h4 class="fw-bold" style="color: white; margin-top: -60px">Lightning Fast Websites</h4>
                                 </div>
                                 <div>
-                                    <h4 class="fw-normal mt-5">Super-quick page loads</h4>
+                                    <h6 class="fw-normal mt-5">Super-quick page loads</h6>
                                 </div>
                             </div>
                         </div>
@@ -311,7 +382,7 @@
                                     <h4 class="fw-bold" style="color: white; margin-top: -60px">Free Pleskpanel</h4>
                                 </div>
                                 <div>
-                                    <h4 class="fw-normal mt-5">Hosting Management simplified</h4>
+                                    <h6 class="fw-normal mt-5">Hosting Management simplified</h6>
                                 </div>
                             </div>
                         </div>
@@ -326,7 +397,7 @@
                                     <h4 class="fw-bold" style="color: white; margin-top: -60px">SNI enabled</h4>
                                 </div>
                                 <div>
-                                    <h4 class="fw-normal mt-5">SSL certificate installation easy</h4>
+                                    <h6 class="fw-normal mt-5">SSL certificate installation easy</h6>
                                 </div>
                             </div>
                         </div>
@@ -341,7 +412,7 @@
                                     <h4 class="fw-bold" style="color: white; margin-top: -60px">24x7 Support</h4>
                                 </div>
                                 <div>
-                                    <h4 class="fw-normal mt-5">Your websites are our priority</h4>
+                                    <h6 class="fw-normal mt-5">Your websites are our priority</h6>
                                 </div>
                             </div>
                         </div>
@@ -356,7 +427,7 @@
                                     <h4 class="fw-bold" style="color: white; margin-top: -60px">Easy 1-click-installer</h4>
                                 </div>
                                 <div>
-                                    <h4 class="fw-normal mt-5">400+ ready-to-install apps</h4>
+                                    <h6 class="fw-normal mt-5">400+ ready-to-install apps</h6>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +442,7 @@
                                     <h4 class="fw-bold" style="color: white; margin-top: -60px">Easy Upgrades</h4>
                                 </div>
                                 <div>
-                                    <h4 class="fw-normal mt-5">Increase resources as per need</h4>
+                                    <h6 class="fw-normal mt-5">Increase resources as per need</h6>
                                 </div>
                             </div>
                         </div>
@@ -386,7 +457,7 @@
                                     <h4 class="fw-bold" style="color: white; margin-top: -60px">Secure Shell Access</h4>
                                 </div>
                                 <div>
-                                    <h4 class="fw-normal mt-5">Access your Shared Hosting</h4>
+                                    <h6 class="fw-normal mt-5">Access your Shared Hosting</h6>
                                 </div>
                             </div>
                         </div>
@@ -401,7 +472,7 @@
                                     <h4 class="fw-bold" style="color: white; margin-top: -60px">Enhanced Security</h4>
                                 </div>
                                 <div>
-                                    <h4 class="fw-normal mt-5">CloudFlare Protection</h4>
+                                    <h6 class="fw-normal mt-5">CloudFlare Protection</h6>
                                 </div>
                             </div>
                         </div>
@@ -416,7 +487,7 @@
                                     <h4 class="fw-bold" style="color: white; margin-top: -60px">Free Website Migrations</h4>
                                 </div>
                                 <div>
-                                    <h4 class="fw-normal mt-5">Move your web hosting to us</h4>
+                                    <h6 class="fw-normal mt-5">Move your web hosting to us</h6>
                                 </div>
                             </div>
                         </div>
@@ -601,7 +672,7 @@
                     <h5 class="card-title">Reliable Web Hosting</h5>
                     <p class="">Specialized Wordpress hosting dedicated for wordpress website for their performance, reliability and security.</p>
                     <div class="card-footer">
-                        <a href="" class="btn">Learn more</a>
+                        <a href="" class="btn" id="btn5">Learn more</a>
                     </div>
                   </div>  
                 </div>
@@ -612,7 +683,7 @@
                       <h5 class="card-title">Dedicated Server</h5>
                       <p class="">Every Website needs dedicated storage and resource. Get a Dedicated server at reasonable price.</p>
                       <div class="card-footer">
-                          <a href="" class="btn">Learn more</a>
+                          <a href="" class="btn" id="btn5">Learn more</a>
                       </div>
                     </div>  
                 </div>
@@ -624,13 +695,178 @@
                       <h5 class="card-title">Cloud Hosting</h5>
                       <p class="">For more bandwidth and high performance. Check cloud hosting features. Dedicated for high speed & extra storage for your website data.</p>
                       <div class="card-footer">
-                          <a href="" class="btn">Learn more</a>
+                          <a href="" class="btn" id="btn5">Learn more</a>
                       </div>
                     </div>  
                 </div>
 
             </div>
         </div>
+
+
+        <section class="py-5" id="sectionw7">
+            <div class="text-center" id="containerw6">
+                <h4>Videos helps you to learn</h4>
+                <h2><b>Some of the frequently asked questions of Us</b></h2>
+            </div>
+            <div class="row px-5">
+                <div class="col text-end px-5">
+                    <!-- Add Arrows -->
+                    <div class="d-inline arrow-left " id="btn1">
+                        <button class="btn"><span><img src="./assets/img/left-arrow.png" style="width: 40px;height: 35.01px;" class="img-fluid" id="btn-d1"></span></button>
+                        <!-- <button class="btn"><span><img src="./assets/img/left-arrow-l.png" style="width: 40px;height: 35.01px;" class="img-fluid" id="btn-l1"></span></button> -->
+                    </div>
+                    <div class="d-inline arrow-right " id="btn2">
+                        <button class="btn"><span><img src="./assets/img/right-arrow.png" style="width: 40px;height: 35.01px;" class="img-fluid" id="btn-d2"></span></button>
+                        <!-- <button class="btn"><span><img src="./assets/img/right-arrow-l.png" style="width: 40px;height: 35.01px;" class="img-fluid" id="btn-l2" ></span></button> -->
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="swiper2 swiper px-5 py-5 card-group">
+            <div class="swiper-wrapper">
+    
+            <div class="swiper-slide">
+                <div class="card" style="width: 22rem;">
+                    <div class="text-center p-3" id="image">
+                        <img src="./assets/img/Rectangle 2219.png"  class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body p-3">
+                        <h5>Reliable Web Hosting</h5>
+                        <p class="card-text">specialized qwordpres hosting dedicated forwordpress website for their performance, reliab,ity and security.</p>
+                      <div class="card-footer border-0 p-3">
+                        <div class="row">
+                            <div class="col-6 my-auto">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./assets/img/Group 14160.png"  class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <p>4+ Views</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 my-auto">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+    
+    
+            <div class="swiper-slide">
+                <div class="card" style="width: 22rem;">
+                    <div class="text-center p-3" id="image">
+                        <img src="./assets/img/Rectangle 2220.png"  class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body p-3">
+                        <h5>Reliable Web Hosting</h5>
+                        <p class="card-text">specialized qwordpres hosting dedicated forwordpress website for their performance, reliab,ity and security.</p>
+                      <div class="card-footer border-0 p-3">
+                        <div class="row">
+                            <div class="col-6 my-auto">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./assets/img/Group 14160.png"  class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <p>4+ Views</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col my-auto">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+    
+    
+            <div class="swiper-slide">
+                <div class="card" style="width: 22rem;">
+                    <div class="text-center p-3" id="image">
+                        <img src="./assets/img/Rectangle 2221.png"  class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body p-3">
+                        <h5>Reliable Web Hosting</h5>
+                        <p class="card-text">specialized qwordpres hosting dedicated forwordpress website for their performance, reliab,ity and security.</p>
+                      <div class="card-footer border-0 p-3">
+                        <div class="row">
+                            <div class="col-6 my-auto">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./assets/img/Group 14160.png"  class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <p>4+ Views</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col my-auto">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+    
+            <div class="swiper-slide">
+                <div class="card" style="width: 22rem;">
+                    <div class="text-center p-3" id="image">
+                        <img src="./assets/img/Rectangle 2219.png"  class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body p-3">
+                        <h5>Reliable Web Hosting</h5>
+                        <p class="card-text">specialized qwordpres hosting dedicated forwordpress website for their performance, reliab,ity and security.</p>
+                      <div class="card-footer border-0 p-3">
+                        <div class="row">
+                            <div class="col-6 my-auto">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="./assets/img/Group 14160.png"  class="card-img-top img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-6">
+                                        <p>4+ Views</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col my-auto">
+                                <a href="" class="btn">Learn More</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
+    
+        </div>
+    
+    
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+    
+        </div>
+    </div>
+        </section>
+        
+
+        <div id="footer"></div>
+
+            
+        
+
+    </section>
+
 
         <div id="footer"></div>
 
@@ -717,5 +953,7 @@
         }
 
     </script>
+
+<script type="text/javascript" src="assets/js/shared-hosting.js"></script>
 </body>
 </html>

@@ -8,11 +8,30 @@
     background-color: #5C64AC;
     border-radius: 5px;
 }
-
+#header1 {
+    background-image: url("../img/Group\ 14175.png");
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    background-position: center; 
+    background-size: 100% 100%; 
+    width: 100%;
+    height: 45rem;
+    /* padding-top: 5rem; */
+}
 .btn {
     color: #5C64AC;
     background-color: #F7F7F7;
     border-radius: 5px;
+}
+
+#btn5 {
+    color: #5C64AC;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
+#btn5:hover {
+    background-color: #5C64AC;
+    color: white;
 }
 
 .btn2 {
@@ -32,6 +51,33 @@
     background-color: #5C64AC;
     border-radius: 5px;
 } */
+
+#sectionw7 button:hover {
+    /* border: 3px solid black; */
+    background-color: #BDBDBD;
+}
+
+.swiper2 .swiper-slide .card {
+    box-shadow: -8px -8px 32px rgba(0, 0, 0, 0.1), 8px 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.swiper2 .swiper-slide .card .card-body p{
+    font-size: small;
+    color: #989898;
+}
+
+.swiper2 .swiper-slide .card .card-footer .btn{
+    background-color: #5C64AC;
+    color: white;
+    border-radius: 5px;
+}
+
+.swiper2 .swiper-slide .card .card-footer {
+    background-color: white;
+}
+
+
 
 #button {
     color: white;

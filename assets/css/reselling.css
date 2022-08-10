@@ -25,18 +25,21 @@
     background-color: #F7F7F7;
     border-radius: 5px;
 }
-
+#btn5 {
+    color: #5C64AC;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+}
+#btn5:hover {
+    background-color: #5C64AC;
+    color: white;
+}
 .btn2 {
     color: #5C64AC;
     background-color: #F7F7F7;
     border-radius: 5px;
 }
 
-#btn2 {
-    color: #5C64AC;
-    background-color: #F7F7F7;
-    border-radius: 5px;
-}
 
 /* .btn:hover {
     color: white;
