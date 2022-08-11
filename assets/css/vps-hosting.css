@@ -342,3 +342,54 @@
     background-color: #5C64AC;
     border-radius: 5px;
 }
+
+
+#boxes .card {
+    box-shadow: -8px -8px 32px rgba(92, 100, 172, 0.1), 8px 8px 32px rgba(92, 100, 172, 0.1);
+    border-radius: 10px;
+    width: 18rem;
+}
+
+#boxes .card:hover {
+    color: #5C64AC;
+    box-shadow: 8px 8px 80px rgba(92, 100, 172, 0.4);
+}
+
+#boxes .card:hover .card-title  {
+    border-bottom: 0.2px solid #5C64AC;;
+}
+
+#boxes .card:hover #boxbtn{
+    color: white;
+    background-color: #5C64AC;
+    border-radius: 5px;
+}
+
+#boxes .card:hover {
+
+}
+
+#boxes p {
+    font-size: small;
+}
+#boxes .card-footer{
+    background-color: white;
+    border: none;
+    /* box-shadow: -8px -8px 32px rgba(92, 100, 172, 0.1), 8px 8px 32px rgba(92, 100, 172, 0.1); */
+    border-radius: 10px;
+}
+#boxes .card-title {
+    border-bottom: 1px solid #000000;
+}
+
+#boxbtn {
+    color: #5C64AC;
+    /* background-color: #F7F7F7; */
+    border-radius: 5px;
+    border: 1px solid #5C64AC;
+}
+/* #boxbtn:hover {
+    color: white;
+    background-color: #5C64AC;
+    border-radius: 5px;
+} */
