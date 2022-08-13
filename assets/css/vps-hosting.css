@@ -347,7 +347,7 @@
 #boxes .card {
     box-shadow: -8px -8px 32px rgba(92, 100, 172, 0.1), 8px 8px 32px rgba(92, 100, 172, 0.1);
     border-radius: 10px;
-    width: 18rem;
+    /* width: 18rem; */
 }
 
 #boxes .card:hover {
