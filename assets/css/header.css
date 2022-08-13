@@ -1,0 +1,4 @@
+.nav-link:hover {
+    background: rgba(92, 100, 172, 0.3);
+    border-radius: 5px;
+}
