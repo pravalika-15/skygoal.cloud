@@ -393,3 +393,13 @@
     background-color: #5C64AC;
     border-radius: 5px;
 } */
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+ #hello {
+    margin: 0px;
+    padding: 0px;
+ }
