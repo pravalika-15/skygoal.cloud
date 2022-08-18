@@ -336,3 +336,9 @@ img.most-pop {
     right: -3%;
     position: absolute;
 }
+
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
