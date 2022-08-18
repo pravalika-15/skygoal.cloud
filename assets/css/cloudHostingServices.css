@@ -344,3 +344,8 @@
     background-color: #5C64AC;
     color: white;
 }
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
