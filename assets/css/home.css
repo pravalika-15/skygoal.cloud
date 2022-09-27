@@ -343,4 +343,11 @@
         padding-left: 0.01rem;
         padding-right: 0.01rem;
     }
+    
+}
+
+@media (max-width:575px) {
+    #section5 .row {
+        padding-left: 3.1rem;
+    }
 }
