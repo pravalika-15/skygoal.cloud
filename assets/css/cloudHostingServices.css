@@ -441,3 +441,7 @@ div.btn-container i{
 .btn-color-mode-switch input[type="checkbox"]:checked ~ .alert{
     display: block;
 }
+
+.card:hover {
+    transform: scale(1.05);
+}

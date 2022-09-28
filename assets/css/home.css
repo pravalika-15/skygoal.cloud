@@ -275,3 +275,86 @@
     background-color: #4C3FFC;
     color: white;
 }
+
+
+#learn_more {
+    border-radius: 22.288px;
+    background-color: #0766F4;
+    color: white;
+}
+
+#section3 .card:hover {
+    transform: scale(1.05);
+}
+
+#section5 .row .card-group {
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+@media (max-width:1200px) {
+    #section5 .row .card-group {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+@media (max-width:1050px) {
+    #section5 .row .card-group {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+@media (max-width:958px) {
+    #section5 .row .card-group {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width:900px) {
+    #section5 .row .card-group {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width:850px) {
+    #section5 .row .card-group {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (max-width:750px) {
+    #section5 .row .card-group {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width:700px) {
+    #section5 .row .card-group {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media (max-width:620px) {
+    #section5 .row .card-group {
+        padding-left: 0.01rem;
+        padding-right: 0.01rem;
+    }
+    
+}
+
+@media (max-width:575px) {
+    #section5 .row {
+        padding-left: 3.1rem;
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
