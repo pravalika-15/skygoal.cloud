@@ -343,6 +343,6 @@ img.most-pop {
     margin: 0 !important;
  }
 
- .card:hover {
+#container7 .card:hover {
     transform: scale(1.05);
 }

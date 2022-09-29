@@ -400,6 +400,10 @@
  }
 
 
- .card:hover {
+.our-services .card:hover {
+    transform: scale(1.05);
+}
+
+#boxes .card:hover {
     transform: scale(1.05);
 }

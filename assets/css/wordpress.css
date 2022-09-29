@@ -505,6 +505,11 @@ div.btn-container i{
     top: -9px;
 }
 
-.card:hover {
+/* .card:hover {
+    transform: scale(1.05);
+} */
+
+
+.our-services .card:hover {
     transform: scale(1.05);
 }

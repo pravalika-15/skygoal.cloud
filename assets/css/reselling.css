@@ -337,6 +337,6 @@ img.most-pop {
     margin: 0 !important;
  }
 
- .card:hover {
+.our-services .card:hover {
     transform: scale(1.05);
 }

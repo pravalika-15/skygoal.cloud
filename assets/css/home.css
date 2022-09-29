@@ -355,6 +355,6 @@
     }
 }
 
-.card:hover {
+#section5 .card:hover {
     transform: scale(1.05);
 }

@@ -442,6 +442,6 @@ div.btn-container i{
     display: block;
 }
 
-.card:hover {
+.our-services .card:hover {
     transform: scale(1.05);
 }
